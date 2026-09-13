@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#07080f" />
+    <meta name="description" content="Nebulix is an experimental, Base-native on-chain ecosystem built around NBX, Orbit cycles, Points, and a guarded Claim interface." />
+    <link rel="canonical" href="https://nebulixprotocol.com/" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <title>Nebulix Protocol — Stage 0 on Base</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Nebulix Protocol home">
+        <img src="/assets/logo.svg" alt="" width="34" height="34" />
+        <span>Nebulix Protocol</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#system">System</a>
+        <a href="#deployments">Deployments</a>
+        <a class="nav-external" href="https://github.com/nebulix-base/nebulix" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Stage 0 · Base</div>
+          <h1>An on-chain system taking shape on Base.</h1>
+          <p class="hero-intro">Nebulix connects the NBX token, a 90-epoch Orbit, on-chain Points, and a guarded Claim interface—built in public and tested carefully.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://nebbyorbit.com" target="_blank" rel="noreferrer">Explore Nebby Orbit <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="https://github.com/nebulix-base/nebulix" target="_blank" rel="noreferrer">Inspect on GitHub</a>
+          </div>
+          <p class="hero-note">Experimental software · Public claims are not announced as live</p>
+        </div>
+
+        <div class="protocol-map" role="img" aria-label="Nebulix Protocol connects NBX, Orbit, Points, and Claim on Base">
+          <div class="map-ring map-ring-outer" aria-hidden="true"></div>
+          <div class="map-ring map-ring-inner" aria-hidden="true"></div>
+          <div class="map-core">
+            <img src="/assets/logo.svg" alt="" width="88" height="88" />
+            <span>NEBULIX</span>
+            <small>BASE · GENESIS</small>
+          </div>
+          <div class="map-node node-nbx"><span>01</span><strong>NBX</strong><small>Token</small></div>
+          <div class="map-node node-orbit"><span>02</span><strong>Orbit</strong><small>90 epochs</small></div>
+          <div class="map-node node-points"><span>03</span><strong>Points</strong><small>On-chain</small></div>
+          <div class="map-node node-claim"><span>04</span><strong>Claim</strong><small>Testing</small></div>
+        </div>
+      </section>
+
+      <section class="section system-section" id="system">
+        <div class="section-heading">
+          <p class="section-kicker">The system</p>
+          <h2>Four connected components.</h2>
+          <p>Each part has a distinct role. Together they form the current Nebulix experiment on Base.</p>
+        </div>
+
+        <div class="component-grid">
+          <article class="component-card">
+            <div class="card-top"><span>01</span><span class="card-status live">Deployed</span></div>
+            <h3>NBX</h3>
+            <p>The fixed-supply ERC-20 foundation of the ecosystem. No minting, rebasing, or transfer taxes.</p>
+            <a href="https://basescan.org/address/0x6dc3a79c8be0b38f6bbd44e6f5e34419529b97de" target="_blank" rel="noreferrer">View on BaseScan <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="component-card">
+            <div class="card-top"><span>02</span><span class="card-status live">Deployed</span></div>
+            <h3>Nebby Orbit</h3>
+            <p>A 90-epoch cycle with sector, warp, checkpoint, and major-event states.</p>
+            <a href="https://nebbyorbit.com" target="_blank" rel="noreferrer">Open the visualization <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="component-card">
+            <div class="card-top"><span>03</span><span class="card-status live">Deployed</span></div>
+            <h3>Nebby Points</h3>
+            <p>The on-chain points layer and the contract entry point used by the guarded Claim interface.</p>
+            <a href="https://basescan.org/address/0x104EcF76f42E0d6B3b5Cca81e667D98cE09cB14f" target="_blank" rel="noreferrer">View contract <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="component-card card-muted">
+            <div class="card-top"><span>04</span><span class="card-status testing">Testing</span></div>
+            <h3>Claim v0.5</h3>
+            <p>A guarded interface that reads live state and simulates <code>claim()</code> before enabling a transaction.</p>
+            <span class="non-link">Preview remains private</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section status-section" id="status">
+        <div class="status-intro">
+          <p class="section-kicker">Current state</p>
+          <h2>Active where it began. Deliberate about what comes next.</h2>
+          <p>Base is the genesis chain and the only active deployment environment. Other chain paths are reserved, not launched.</p>
+        </div>
+
+        <div class="status-board">
+          <div class="status-row">
+            <div><span class="chain-mark chain-base">B</span><strong>Base</strong></div>
+            <span class="status-pill active">Active · Genesis</span>
+            <p>Deployed contracts and current development</p>
+          </div>
+          <div class="status-row">
+            <div><span class="chain-mark">S</span><strong>Solana</strong></div>
+            <span class="status-pill dormant">Dormant</span>
+            <p>Adapter path reserved for future work</p>
+          </div>
+          <div class="status-row">
+            <div><span class="chain-mark">R</span><strong>Robinhood Chain</strong></div>
+            <span class="status-pill dormant">Dormant</span>
+            <p>Adapter path reserved for future work</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section deployments-section" id="deployments">
+        <div class="section-heading deployment-heading">
+          <p class="section-kicker">Base deployments</p>
+          <h2>Inspect the live contracts.</h2>
+          <p>Live contract state is authoritative. Source verification remains pending for three components.</p>
+        </div>
+
+        <div class="deployment-table" role="table" aria-label="Nebulix Base contract deployments">
+          <div class="deployment-row deployment-header" role="row">
+            <span role="columnheader">Component</span>
+            <span role="columnheader">Address</span>
+            <span role="columnheader">Source</span>
+            <span aria-hidden="true"></span>
+          </div>
+          <div class="deployment-row" role="row">
+            <strong role="cell">NBX</strong>
+            <code role="cell">0x6dc3…b97de</code>
+            <span role="cell" class="verification verified">Verified</span>
+            <a role="cell" href="https://basescan.org/address/0x6dc3a79c8be0b38f6bbd44e6f5e34419529b97de" target="_blank" rel="noreferrer" aria-label="View NBX contract on BaseScan">↗</a>
+          </div>
+          <div class="deployment-row" role="row">
+            <strong role="cell">NebbyFactory</strong>
+            <code role="cell">0x61Ae…00216</code>
+            <span role="cell" class="verification pending">Pending</span>
+            <a role="cell" href="https://basescan.org/address/0x61Ae84aD89Cda618AcF97a7D97DD2a9cEDe00216" target="_blank" rel="noreferrer" aria-label="View NebbyFactory contract on BaseScan">↗</a>
+          </div>
+          <div class="deployment-row" role="row">
+            <strong role="cell">NebbyOrbit</strong>
+            <code role="cell">0xee9c…cd98</code>
+            <span role="cell" class="verification pending">Pending</span>
+            <a role="cell" href="https://basescan.org/address/0xee9c12cef429b882eed9311eee41512b0a69cd98" target="_blank" rel="noreferrer" aria-label="View NebbyOrbit contract on BaseScan">↗</a>
+          </div>
+          <div class="deployment-row" role="row">
+            <strong role="cell">NebbyPoints</strong>
+            <code role="cell">0x104E…B14f</code>
+            <span role="cell" class="verification pending">Pending</span>
+            <a role="cell" href="https://basescan.org/address/0x104EcF76f42E0d6B3b5Cca81e667D98cE09cB14f" target="_blank" rel="noreferrer" aria-label="View NebbyPoints contract on BaseScan">↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section stage-section" id="stage-0">
+        <div class="stage-number" aria-hidden="true">0</div>
+        <div class="stage-copy">
+          <p class="section-kicker">Stage 0</p>
+          <h2>Observation before expansion.</h2>
+          <p>Stage 0 is an early experimental phase for observing real on-chain behavior and protocol mechanics. Liquidity is intentionally small and owner-provided for testing swaps, price impact, and Uniswap v3 range behavior.</p>
+          <div class="stage-facts">
+            <span>Not a launch</span>
+            <span>Not a token sale</span>
+            <span>Not a promotion phase</span>
+            <span>No promise of future value</span>
+          </div>
+          <a href="https://github.com/nebulix-base/nebulix/blob/main/STAGE_0.md" target="_blank" rel="noreferrer">Read the complete Stage 0 status <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <img src="/assets/logo.svg" alt="" width="30" height="30" />
+        <div><strong>Nebulix Protocol</strong><span>Built from Base outward.</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="https://nebbyorbit.com" target="_blank" rel="noreferrer">Nebby Orbit</a>
+        <a href="https://github.com/nebulix-base/nebulix" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://basescan.org/address/0x6dc3a79c8be0b38f6bbd44e6f5e34419529b97de" target="_blank" rel="noreferrer">NBX on BaseScan</a>
+      </div>
+      <p class="disclaimer">Experimental software. Nothing on this site is financial advice, an offer to sell, or a guarantee of functionality, availability, value, or return.</p>
+    </footer>
+  </body>
+</html>
